@@ -1,0 +1,621 @@
+
+:root {
+    --color-primary: #f4a7ba; 
+    --color-secondary: #fb7777;
+    --color-extra: #c1aad3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: rgb(238, 223, 225);
+    line-height: 1.4;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+p {
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*    Navbar    */
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color:brown;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color:#eee;
+    font-size: 18px;
+    letter-spacing: 3px; 
+    text-decoration: none;
+    transition: color 0.9s;  
+}
+
+.navbar-left  a:hover {
+    color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.navbar-brand img {         /*圖標*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+/*  BUTTON  */
+
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border-radius: 25px;
+    font-family: Verdana;
+    padding: 7px 15px;     /* 上下, 左右 */
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 17px;
+    white-space: nowrap;   /* 不換行*/
+    transition: 0.9s;
+}
+
+.btn-Log-In {
+    font-family: fantasy;
+    text-transform: uppercase;
+    border: none;
+    color: #000;
+    z-index: 11;
+}
+
+.btn-Log-In:hover {
+    display: block;
+    background-color:wheat;
+}
+
+.btn-Buy-It-Now {
+    font-family: Comic Sans MS;
+    background-color: #f598af;
+    color: #eee;
+    padding: 5px 30px;
+}
+
+.btn-Buy-It-Now:hover {
+    background-color:#cf4764;
+}
+
+
+
+/*    Social     */
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    /* 圖片放大 */
+}
+
+
+/*      Box      */
+
+.box {
+    margin-bottom: 30px;
+}
+                        
+.box-A {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.box-B {
+    max-width: auto;
+    margin-bottom: 30px;
+}
+
+.box-C {
+    max-width: auto;
+    margin-bottom: 30px;
+}
+
+
+/*     BOX A    */
+
+.bp-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bp-product-item {
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.bp-product-item:hover {
+    transform: scale(1.1);      /* 讓圖片變大 */
+}
+
+.box-A img {
+    width: auto;
+    height: auto;
+    max-width: 65%;
+    box-shadow: 0 0 10px rgb(185, 36, 48);
+    margin-top: 25px;
+}
+
+/*     BOX B    */
+
+.itzy-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: auto;
+    row-gap: auto;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.itzy-product img:hover {
+    box-shadow: 0 0 30px rgb(172, 27, 29);
+}
+
+.itzy-product-item {
+    transition: transform 0.5s;
+}
+.itzy-product-item:hover {
+    transform: scale(1.05);
+}
+
+.box-B img[src$="img/ITZY-logo.webp"] {
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    background: none;
+}
+
+.itzy-product img {
+    height: auto;
+    width: auto;
+    max-width: 60%;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/*     BOX C    */
+
+.gidle-product {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.box-C img[src$="img/GIDLE-LOGO.webp"] {
+    width: auto;
+    height: auto;
+    max-width: 10%;
+}
+
+.gidle-product img {
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    box-shadow: 0 0 30px rgba(24, 12, 104, 0.254);
+    margin: 20px auto;
+}
+
+.gidle-product-item {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.9s;
+}
+
+.gidle-product-item:hover {
+    transform: scale(0.9);
+}
+
+
+/*      Backgrounds     */
+
+.bg-01 {
+    background-color: var(--color-primary);
+}
+
+.bg-02 {
+    background-color: var(--color-secondary);
+}
+
+.bg-03 {
+    background-color: var(--color-extra);
+}
+
+/* Text Styling */
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-lg {          /* GIDLE    */
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 28px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+} 
+
+.text-md {        /*    BLACKPINK  */
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-top:15px;
+    margin-bottom: 20px;
+}
+
+.text-m {           /*  itzy    */
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+    color: #d4e9e2;
+}
+
+.text-sm {      /*  BLACKPINK   */
+    font-size: 15px;
+    font-style:italic;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+/* Padding */
+
+.py-md {
+    padding: 30px 0px;
+} 
+
+
+
+/*  modal   */
+
+.modal {
+    display: none;          /* 預設隱藏對話框 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);  
+}
+
+.modal-box {
+    margin: 10% auto;
+    width: 400px;
+    background: #fff;
+    color: #333;
+    position: relative;
+    animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+
+    /* 定義一個動畫效果*/
+    from {
+        opacity: 0;
+        /*  不透明度為0 */
+    }
+
+    to {
+        opacity: 1;
+        /* 不透明度為1  完全顯示 */
+    }
+}
+
+.modal-body {
+    padding: 50px;
+}
+
+.modal-body h2 {
+    font-weight: bold;
+    color: brown;
+}
+
+.form-control label {
+    color: brown;
+}
+.modal-body .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.modal .close {
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal .modal-footer {
+    background: #f7f7f9;
+    color: #333;
+    padding: 20px 0;
+    border-top: #eee 1px solid;
+    text-align: center;
+}
+
+.modal .modal-footer a {
+    color: steelblue;
+}
+
+.btn-brown {
+    background: brown;
+    color: #fff;
+}
+
+.btn-brown:hover {
+    background-color: rgb(207, 51, 51);
+}
+
+
+
+/* Form */
+
+.form-control {
+    margin: 20px 0;
+}
+
+.form-control label {
+    display: block;
+    text-transform: uppercase;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+    height: 50px;
+    padding: 5px;
+}
+.p1 {
+    color: rgb(60, 136, 235);
+    font-size: 14px;
+}
+
+
+
+/* Hamburger Menu Icon */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.5s;
+    display: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 1s;
+}
+
+/* 將中間條紋向下移動 7 像素 */
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+/* 將底部條紋向下移動 14 像素 */
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+/* 當處於開啟狀態時，將頂部條紋旋轉 45 度，同時向下移動 6 像素，向右移動 6 像素 */
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+/* 處於開啟狀態時，隱藏中間條紋 */
+.open .hamburger-middle {
+    display: none;
+}
+
+/* 當處於開啟狀態時，將底部條紋旋轉 -45 度，同時向下移動 6 像素，向左移動 6 像素 */
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: auto;
+    right: 0;
+    background-color:rgb(206, 246, 246);
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
+        inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+    transition: all 0.8s;
+}
+
+.mobile-menu ul {
+    line-height: 3;
+    border-bottom: #777 solid 1px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.mobile-menu a {
+    font-size: 25px;
+    font-weight: bold;
+    color: brown;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    color: brown;
+}
+
+.mobile-menu div {
+    margin-top: 20px;
+}
+
+.mobile-menu div a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.hidden {
+    transform: translateX(100%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+
+
+@media (max-width: 768px) { /* 小於或等於768*/
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar .navbar-left,
+    .navbar .navbar-right {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {     /* 小於或等於960*/
+    .text-xl {
+        font-size: 30px;
+    }
+
+    .text-lg {
+        font-size: 25px;
+    }
+
+    .text-md {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1200px) {            /* 小於或等於1200*/
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar .navbar-left,
+    .navbar .navbar-right {
+        display: none;
+    }
+    .social {
+        margin-top: 20px;
+        margin-left: 75%;
+    }
+
+}
+
+@media (min-width: 1440px) {    /* 大於或等於1440*/
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .social {
+        max-width: 90%;
+    }
+}
+
